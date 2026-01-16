@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnHub - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f5f7fb; color: #333; }
+
+    /* Navbar */
+    .navbar {
+      background: #3b8fd8;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    .navbar a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: 500; }
+
+    /* Layout */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 { margin-bottom: 10px; }
+    p { font-size: 14px; color: #666; margin-bottom: 20px; }
+
+    /* Contact Info */
+    .info-item { margin-bottom: 20px; }
+    .info-item strong { display: block; margin-bottom: 5px; }
+
+    /* Form */
+    label { font-size: 14px; font-weight: 500; }
+    input, select, textarea {
+      width: 100%;
+      margin-top: 6px;
+      margin-bottom: 18px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    textarea { resize: none; height: 100px; }
+
+    button {
+      background: #3b8fd8;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover { background: #327cc0; }
+
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div><strong>LearnHub</strong></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Enroll</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Contact Info -->
+    <div class="card">
+      <h2>Get In Touch</h2>
+      <p>Have questions? We'd love to hear from you.</p>
+
+      <div class="info-item">
+        <strong>Email</strong>
+        info@learnhub.com<br />support@learnhub.com
+      </div>
+
+      <div class="info-item">
+        <strong>Phone</strong>
+        +91 1234567890<br />Mon–Fri, 9:00 AM – 6:00 PM
+      </div>
+
+      <div class="info-item">
+        <strong>Address</strong>
+        123 Education Street<br />Bangalore, Karnataka 560001
+      </div>
+
+      <div class="info-item">
+        <strong>Business Hours</strong>
+        Mon–Fri: 9:00 AM – 6:00 PM<br />Sat: 10:00 AM – 4:00 PM
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="card">
+      <h2>Send Us a Message</h2>
+
+      <label>Your Name</label>
+      <input type="text" placeholder="Enter your name" />
+
+      <label>Your Email</label>
+      <input type="email" placeholder="Enter your email" />
+
+      <label>Subject</label>
+      <select>
+        <option>Select a subject</option>
+        <option>Course Inquiry</option>
+        <option>Support</option>
+        <option>Feedback</option>
+      </select>
+
+      <label>Message</label>
+      <textarea placeholder="Write your message here..."></textarea>
+
+      <button>Send Message</button>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2024 LearnHub. All rights reserved.<br />
+    Email: info@learnhub.com | Phone: +91 1234567890
+  </footer>
+
+</body>
+</html>

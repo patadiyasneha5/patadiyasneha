@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LearnHub | Course Enrollment</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6fb;
+}
+
+/* Navbar */
+.navbar{
+    background:#3498db;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* Form Container */
+.container{
+    width:420px;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.form-header{
+    background:#3498db;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+/* Sections */
+.section{
+    border:1px solid #ddd;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:5px;
+}
+.section h4{
+    margin-top:0;
+    font-size:14px;
+    color:#3498db;
+}
+
+/* Inputs */
+label{
+    font-size:13px;
+    display:block;
+    margin-top:10px;
+}
+input, select, textarea{
+    width:90%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+textarea{
+    resize:none;
+}
+
+/* Radio */
+.radio-group{
+    margin:none;
+    padding:none;
+}
+
+/* Button */
+button{
+    width:100%;
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+/* Footer */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>LearnHub</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Enroll</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- Form -->
+<div class="container">
+    <div class="form-header">
+        <h3>Course Enrollment</h3>
+        <p>Fill out the form to enroll in a course</p>
+    </div>
+
+    <!-- Personal Info -->
+    <div class="section">
+        <h4>📌 Personal Information</h4>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name">
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+91 1234567890">
+
+        <label>Date of Birth</label>
+        <input type="date">
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h4>🎓 Education Background</h4>
+
+        <label>Highest Qualification</label>
+        <select>
+            <option>Select your qualification</option>
+            <option>High School</option>
+            <option>Diploma</option>
+            <option>Graduate</option>
+            <option>Post Graduate</option>
+        </select>
+
+        <label>Do you have programming experience?</label>
+        <div class="radio-group">
+            <input type="radio" name="exp"> Yes
+            <input type="radio" name="exp"> No
+        </div>
+    </div>
+
+    <!-- Course -->
+    <div class="section">
+        <h4>📚 Course Selection</h4>
+
+        <label>Select Course</label>
+        <select>
+            <option>Choose a course</option>
+            <option>Web Development</option>
+            <option>Python Programming</option>
+            <option>Data Science</option>
+            <option>UI/UX Design</option>
+            <option>Artificial Intelligence</option>
+        </select>
+
+        <label>Why do you want to take this course?</label>
+        <textarea rows="3" placeholder="Tell us about your goals"></textarea>
+    </div>
+
+    <input type="checkbox"> I agree to the Terms & Conditions and Privacy Policy
+
+    <button>Complete Enrollment</button>
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2024 LearnHub. All rights reserved.<br>
+    Email: info@learnhub.com | Phone: +91 1234567890
+</footer>
+
+</body>
+</html>
